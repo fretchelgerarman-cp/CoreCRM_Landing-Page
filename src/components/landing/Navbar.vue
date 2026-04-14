@@ -27,6 +27,7 @@ export default {
         
      
         <div class="text-xl font-bold text-(--emerald-dark)">
+            <span class="bg-(--emerald) text-white px-2  rounded inline-flex items-center justify-center">c</span>
           CoreCRM
         </div>
 
@@ -35,7 +36,7 @@ export default {
           <a href="#" class="hover:text-(--emerald)">Features</a>
           <a href="#" class="hover:text-(--emerald)">Pricing</a>
           <a href="#" class="hover:text-(--emerald)">About</a>
-          <a href="#" class="border bg-(--emerald) text-white px-6 rounded-lg h-12 font-semibold flex items-center">Contact</a>
+          <a href="#" class="border bg-(--emerald) text-white px-6 rounded-2xl h-12 font-semibold flex items-center">Contact</a>
         </div>
 
         
