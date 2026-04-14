@@ -101,6 +101,13 @@ body {
   justify-content: center;
 }
 
+.pricing {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 h1,
 h2 {
   font-family: var(--heading);

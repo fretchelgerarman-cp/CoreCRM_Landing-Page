@@ -3,6 +3,7 @@ import HeroBanner from './components/landing/HeroBanner.vue'
 import FeatureGrid from './components/landing/FeatureGrid.vue'
 import ContactTable from './components/landing/ContactTable.vue'
 import Navbar from './components/landing/Navbar.vue'
+import Pricing from './components/landing/Pricing.vue'
 </script>
 
 <template>
@@ -10,4 +11,5 @@ import Navbar from './components/landing/Navbar.vue'
  <HeroBanner />
  <FeatureGrid />
  <ContactTable />
+ <Pricing />
 </template>
