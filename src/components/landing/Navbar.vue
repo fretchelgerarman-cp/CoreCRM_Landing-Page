@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <nav class="bg-white shadow-md">
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between h-16 items-center">
         
