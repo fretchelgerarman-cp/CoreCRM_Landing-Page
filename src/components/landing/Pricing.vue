@@ -7,9 +7,9 @@ export default {
         return {
             isAnnual: false,
             plans: [
-                { title: 'Starter', monthlyPrice: 9, annualPrice: 15, description: 'For individuals', features: ['500 contacts', 'Basic pipeline', 'Email integration', 'Mobile app'], popular: false, buttonText: 'Get Started' },
-                { title: 'Pro', monthlyPrice: 29, annualPrice: 39, description: 'For growing teams', features: ['5,000 contacts', 'Advanced pipeline', 'Automation workflows', 'Priority support'], popular: true, buttonText: 'Get Started' },
-                { title: 'Enterprise', monthlyPrice: 79, annualPrice: 89, description: 'For large orgs', features: ['Unlimited contacts', 'Custom pipelines', 'SSO security', '24/7 support'], popular: false, buttonText: 'Choose Plan' }
+                { title: 'Starter', monthlyPrice: 9, annualPrice: 15, description: 'For individuals', features: ['250 contacts', 'Basic pipeline', 'Email support'], popular: false, buttonText: 'Get Started' },
+                { title: 'Pro', monthlyPrice: 29, annualPrice: 39, description: 'For growing teams', features: ['Unlimited contacts', 'Advanced pipeline', 'Automations', 'Priority support'], popular: true, buttonText: 'Get Started' },
+                { title: 'Enterprise', monthlyPrice: 79, annualPrice: 89, description: 'For large orgs', features: ['Everything in Pro', 'Custom integrations', 'Dedicated manager', 'SSO & audit logs'], popular: false, buttonText: 'Choose Plan' }
             ]
         }
     },
