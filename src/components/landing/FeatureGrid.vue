@@ -1,6 +1,6 @@
 <script >
 import FeatureCard from '../common/FeatureCard.vue'
-import { AlarmClock, Users, ChartColumn, Mail, BarChart3, Zap, Shield } from '@lucide/vue' 
+import { Users, ChartColumn, Mail, BarChart3, Shield } from '@lucide/vue' 
 export default {
     components: {
         FeatureCard,
