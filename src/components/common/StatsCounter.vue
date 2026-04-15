@@ -1,6 +1,13 @@
 <script>
 export default {
   name: "StatsCounter",
+  expose: ['reset','startCounter'],
+  props: {
+    icon: {
+      type: String,
+      required: true
+    }
+  },
   data() {
     return {
       count: 0,
@@ -12,8 +19,9 @@ export default {
       this.count = 0
 
       this.interval = setInterval(() => {
+        const isFloat = target % 1 !== 0
         if (this.count < target) {
-          this.count += Math.ceil(target / 100) 
+          this.count = parseFloat((this.count + (isFloat ? parseFloat((target / 100).toFixed(2)) : Math.ceil(target / 100))).toFixed(2))
         } else {
           this.count = target
           clearInterval(this.interval)
@@ -29,7 +37,7 @@ export default {
 </script>
 
 <template>
-  <h2 class=" text-white">
-    {{ count }}
-  </h2>
+  <p class=" text-white text-3xl font-bold">
+    {{Number(count).toLocaleString()}}{{ icon }}
+  </p>
 </template>
