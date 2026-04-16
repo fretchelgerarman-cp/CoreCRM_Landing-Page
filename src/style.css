@@ -3,7 +3,7 @@
 
 
 :root {
-  /* Emerald palette */
+  
   --emerald-dark: #064e3b;
   --emerald: #059669;
   --emerald-medium: #065f46;
@@ -13,18 +13,18 @@
   --emerald-pale: #bbf7d0;
   --emerald-faint: #a7f3d0;
 
-  /* Neutral */
+  
   --white: #ffffff;
 
-  /* Amber (pending) */
+  
   --amber-100: #fef3c7;
   --amber-600: #d97706;
 
-  /* Red (inactive) */
+
   --red-100: #fecaca;
   --red-500: #dc2626;
 
-  /* Semantic aliases */
+ 
   --text: var(--emerald-medium);
   --text-h: var(--emerald-dark);
   --bg: var(--white);
@@ -56,25 +56,6 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: var(--emerald-faint);
-    --text-h: var(--emerald-light);
-    --bg: var(--emerald-dark);
-    --border: var(--emerald-medium);
-    --code-bg: #064e3b;
-    --accent: var(--emerald-light);
-    --accent-bg: rgba(209, 250, 229, 0.15);
-    --accent-border: rgba(209, 250, 229, 0.5);
-    --social-bg: rgba(6, 78, 59, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
 
 body {
   margin: 0;

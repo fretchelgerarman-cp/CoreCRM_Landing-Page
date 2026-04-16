@@ -54,9 +54,9 @@ export default {
 </script>
 
 <template>
-    <div class="feature flex flex-col items-center gap-4 bg-white py-20">
+    <div class="feature flex flex-col items-center gap-4 bg-white py-20 px-4 md:px-0">
         <span class="text-xs font-semibold px-4 py-2 rounded-full bg-(--emerald-light) text-(--emerald-dark)">FEATURES</span>
-        <h3 class="text-3xl font-bold">Everything you need to close deals</h3>
+        <h3 class="text-3xl font-bold text-center">Everything you need to close deals</h3>
         <p class="font-thin text-xs text-(--emerald-medium)">Powerful tools, simple interface. Built for teams that move fast.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl p-10">
             <FeatureCard v-for="feature in features" :key="feature.id" :title="feature.title" :description="feature.description" :icon="feature.icon" />

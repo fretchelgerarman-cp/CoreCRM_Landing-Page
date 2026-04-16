@@ -25,22 +25,22 @@ export default {
 
       <div>
         <StatsCounter ref="companies" icon="+" />
-        <p>Companies</p>
+        <p class="text-xs">Companies</p>
       </div>
 
       <div>
         <StatsCounter ref="contacts" icon="M" />
-        <p>Contacts Managed</p>
+        <p class="text-xs">Contacts Managed</p>
       </div>
 
       <div>
         <StatsCounter ref="satisfaction" icon="%" />
-        <p>Satisfaction</p>
+        <p class="text-xs">Satisfaction</p>
       </div>
 
       <div>
         <StatsCounter ref="integrations" icon="+" />
-        <p>Integrations</p>
+        <p class="text-xs ">Integrations</p>
       </div>
 
     </div>
