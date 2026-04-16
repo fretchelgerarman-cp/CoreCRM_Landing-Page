@@ -69,7 +69,7 @@ export default {
 </script>
 
 <template>
-    <div class="contact flex flex-col items-center gap-4 bg-(--emerald-mint)">
+    <div class="contact flex flex-col items-center gap-4 bg-(--emerald-mint) px-4 md:px-0">
 
         <span class="text-xs font-semibold px-4 py-2 rounded-full bg-(--emerald-light) text-(--emerald-dark)">LIVE
             PREVIEW</span>
@@ -77,13 +77,13 @@ export default {
         <p class="font-thin text-xs text-(--emerald-medium)">Try searching and filtering contacts in real-time.</p>
 
         <div class="bg-white rounded-2xl p-6 shadow-lg border border-(--emerald-light)">
-            <div class="flex gap-2 flex-col sm:flex-row w-full">
+            <div class="flex gap-2 flex-col md:flex-row w-full">
                 <div class="relative grow">
                     <input type="text" v-model="searchQuery" placeholder="Search contacts..."
                         class="bg-(--emerald-surface) px-4 py-2 pl-10 h-12 rounded-2xl border border-(--emerald-light) focus:outline-none focus:ring-2 focus:ring-(--emerald-pale) focus:border-transparent w-full">
                     <Search class="absolute left-3 top-1/2 transform -translate-y-1/2 text-(--emerald-medium)" />
                 </div>
-                <div class="relative">
+                <div class="relative w-full md:w-auto">
                     <button @click="showStatusDropdown = !showStatusDropdown"
                         class="flex items-center gap-2 bg-(--emerald-surface) rounded-2xl border border-(--emerald-light) px-6 py-2 whitespace-nowrap w-full">
                         <Funnel />
@@ -105,29 +105,26 @@ export default {
 
             <div class="md:hidden">
                 <div v-for="contact in filteredContacts" :key="contact.email"
-                    class="bg-white p-4 border border-(--emerald-light)">
-                    <div class="flex items-center">
+                    class="py-4 border-b border-(--emerald-light) last:border-b-0">
+                    <div class="flex items-center gap-3 mb-1">
                         <div
-                            :class="`${contact.initialsBg} w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold text-lg`">
+                            :class="`${contact.initialsBg} w-10 h-10 rounded-full flex items-center justify-center text-white font-semibold text-sm flex-shrink-0`">
                             {{ contact.initials }}
                         </div>
-
-                        <h4 class="font-semibold text-(--emerald-dark)">{{ contact.name }}</h4>
-                        <p class="text-xs text-(--emerald-medium)">{{ contact.email }}</p>
-
+                        <span class="font-semibold text-(--emerald-dark)">{{ contact.name }}</span>
                     </div>
-
-                    <span :class="`px-3 py-1 rounded-full text-xs font-semibold ${contact.status === 'active' ? 'bg-(--emerald-light) text-(--emerald-dark)' :
+                    <p class="text-xs text-(--emerald-medium) mb-2">{{ contact.email }}</p>
+                    <span :class="`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-2 ${contact.status === 'active' ? 'bg-(--emerald-light) text-(--emerald-dark)' :
                             contact.status === 'pending' ? 'bg-(--amber-100) text-(--amber-600)' :
                                 'bg-(--red-100) text-(--red-500)'
                         }`">
                         {{ contact.status.charAt(0).toUpperCase() + contact.status.slice(1) }}
                     </span>
+                    <br />
                     <button class="flex items-center gap-1 text-(--emerald) font-semibold text-sm">
                         View
                         <MoveRight class="w-4 h-4" />
                     </button>
-
                 </div>
             </div>
 
@@ -153,7 +150,7 @@ export default {
                                 <span class="font-medium text-(--emerald-dark)">{{ contact.name }}</span>
                             </div>
                         </td>
-                        <td class="px-4 py-3 text-(--emerald-medium)">{{ contact.email }}</td>
+                        <td class="p-10 text-(--emerald-medium)">{{ contact.email }}</td>
                         <td class="px-4 py-3">
                             <span :class="`px-3 py-1 rounded-full text-xs font-semibold ${contact.status === 'active' ? 'bg-(--emerald-light) text-(--emerald-dark)' :
                                     contact.status === 'pending' ? 'bg-(--amber-100) text-(--amber-600)' :

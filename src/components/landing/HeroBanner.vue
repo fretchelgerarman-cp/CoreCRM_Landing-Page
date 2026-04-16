@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-    <div class="bg-(--emerald-mint) flex flex-col gap-4 items-center hero pt-16">
+    <div class="bg-(--emerald-mint) flex flex-col gap-4 items-center hero pt-16 px-4 md:px-0">
         <span class="font-semibold text-xs bg-(--emerald-light) px-4 py-2 rounded-2xl bg-opacity-5">#1 CRM for Growing Teams</span>
          <h1 class="flex flex-col md:gap-2 items-center text-3xl md:text-5xl">
             <span class="font-bold text-(--emerald-dark)">Manage Contacts.</span>

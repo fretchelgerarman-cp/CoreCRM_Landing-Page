@@ -20,7 +20,7 @@ export default {
           <h3 class="text-xl font-bold mb-2" :class="popular ? 'text-white' : 'text-(--emerald-dark)'">{{ title }}</h3>
           <p class="text-sm mb-6" :class="popular ? 'text-(--emerald-faint)' : 'text-(--emerald-medium)'">{{ description }}</p>
         </div>
-        <div class="mb-4">
+        <div class="mb-4 text-center">
             <span class="text-4xl font-bold" :class="popular ? 'text-white' : 'text-(--emerald-dark)'">${{ price }}</span>
             <span :class="popular ? 'text-white' : 'text-(--emerald-medium)'">/{{ period }}</span>
         </div>

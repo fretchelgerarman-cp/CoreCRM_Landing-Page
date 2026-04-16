@@ -34,7 +34,7 @@ export default {
 </script>
 
 <template>
-    <div class="pricing flex flex-col items-center gap-4 bg-white">
+    <div class="pricing flex flex-col items-center gap-4 bg-white px-4 md:px-0">
         <span class="text-xs font-semibold px-4 py-2 rounded-full bg-(--emerald-light) text-(--emerald-dark)">PRICING</span>
         <h3 class="text-3xl font-bold">Simple, transparent pricing</h3>
         <p class="font-thin text-xs text-(--emerald-medium)">No hidden fees. Cancel anytime.</p>
